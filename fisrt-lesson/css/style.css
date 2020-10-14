@@ -1,0 +1,808 @@
+@font-face {
+  src: url(/fisrt-lesson/fonts/PFEncoreSansPro-Black.otf);
+  font-family: "PF Encore Sans Pro";
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/fisrt-lesson/image/header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__container {
+  width: 76%;
+  height: 68px;
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper__container__logo {
+  width: 100px;
+}
+
+.wrapper__container__utelites {
+  width: 40%;
+  height: 68%;
+}
+.wrapper__container__utelites nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper__container__utelites nav ul .section__class {
+  width: 422px;
+  height: 11px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro - Thin";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+.wrapper__container__utelites nav ul .active {
+  color: #fc635e;
+  border-bottom: 4px solid #fc635e;
+}
+
+.btn {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap__container {
+  width: 960px;
+  height: 487px;
+  margin-top: 192px;
+  text-align: center;
+}
+.wrap__container h1 {
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro";
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.wrap__container h1::before, .wrap__container h1::after {
+  content: "";
+  width: 107px;
+  margin-top: 18px;
+  height: 8px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  margin-bottom: 27px;
+}
+.wrap__container span {
+  color: #fc635e;
+  margin-right: 15px;
+}
+.wrap__container p {
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.12px;
+}
+.wrap__container .btn__class {
+  width: 205px;
+  position: relative;
+  margin-top: 48px;
+}
+.wrap__container .btn__class::after {
+  background-image: url(/fisrt-lesson/ikon/mouse.png);
+  content: "";
+  background-size: cover;
+  height: 345px;
+  width: 120px;
+  margin-top: 12px;
+  margin-left: 9px;
+  position: absolute;
+}
+
+.scrool {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+}
+
+.we {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.why__we {
+  width: 100%;
+  display: flex;
+  min-height: 550px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.why__we__main {
+  width: 505px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.why__we__main p {
+  width: 505px;
+  height: 45px;
+  color: #adadad;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+}
+
+.why__we__cool {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.why__we__cool__step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 202px;
+  height: 236px;
+}
+.why__we__cool__step p {
+  color: #adadad;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 18px;
+  letter-spacing: -0.07px;
+}
+.why__we__cool__step span {
+  color: #868686;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
+}
+.why__we__cool__step span::after {
+  content: "";
+  display: block;
+  width: 58px;
+  margin-top: 11px;
+  height: 1px;
+  background-color: #adadad;
+  letter-spacing: -0.14px;
+}
+
+.section__city {
+  width: 100%;
+  height: 576px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/fisrt-lesson/image/city.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business__expaind {
+  width: 940px;
+  height: 384px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 8px solid #435764;
+}
+.business__expaind h1 {
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro";
+  font-size: 51px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -2.26px;
+  margin-bottom: 51px;
+}
+.business__expaind h1 span {
+  color: #fc635e;
+}
+
+.btn__main {
+  width: 205px;
+  background-color: transparent;
+  height: 56px;
+  border: 3px solid #fc635e;
+  color: #fc635e;
+  font-size: 21px;
+  border-radius: 5px;
+  font-weight: 300;
+  line-height: 25.93px;
+  letter-spacing: -0.12px;
+}
+
+.step__class {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 840px;
+}
+
+.why__we__cool__line {
+  width: 801px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cool__one, .cool__two, .cool__three, .cool__four {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.cool__one h1, .cool__two h1, .cool__three h1, .cool__four h1 {
+  color: #868686;
+  font-family: "PF Encore Sans Pro";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 45px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: -0.12px;
+}
+.cool__one h1::after, .cool__two h1::after, .cool__three h1::after, .cool__four h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  height: 1px;
+  background-color: #adadad;
+  letter-spacing: -0.14px;
+}
+.cool__one h1 span, .cool__two h1 span, .cool__three h1 span, .cool__four h1 span {
+  color: #fc635e;
+}
+.cool__one p, .cool__two p, .cool__three p, .cool__four p {
+  width: 127px;
+  margin-top: 11px;
+  height: 48px;
+  color: #9f9f9f;
+  margin-left: 16px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17.02px;
+  letter-spacing: -0.08px;
+}
+
+.cool__one {
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: flex-start;
+  height: 201px;
+  margin-top: 99px;
+  height: 201px;
+  background-image: url(/fisrt-lesson/ikon/step-1.png);
+}
+
+.cloth img {
+  width: 28px;
+  height: 28px;
+}
+
+.cool__two {
+  width: 397px;
+  height: 399px;
+  margin-top: 150px;
+  margin-left: -132px;
+  justify-content: flex-start;
+  z-index: 10;
+  align-self: flex-start;
+  align-items: flex-end;
+  background-image: url(/fisrt-lesson/ikon/step-2.png);
+}
+.cool__two p {
+  margin-right: 26px;
+}
+.cool__two h1 {
+  margin-right: 48px;
+  margin-top: 50px;
+}
+
+.cool__three {
+  width: 208px;
+  z-index: 10;
+  height: 201px;
+  margin-left: -105px;
+  align-self: flex-start;
+  background-image: url(/fisrt-lesson/ikon/step-3.png);
+}
+.cool__three p {
+  margin-right: 16px;
+}
+
+.cool__four {
+  width: 262px;
+  height: 316px;
+  right: -3px;
+  margin-top: 70px;
+  align-self: flex-start;
+  position: absolute;
+  justify-content: flex-start;
+  background-image: url(/fisrt-lesson/ikon/step-4.png);
+}
+.cool__four h1 {
+  margin-top: 63px;
+}
+.cool__four p {
+  width: 194px;
+}
+
+.products__surce {
+  width: 100%;
+  height: 576px;
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.scrool__down {
+  align-self: flex-end;
+}
+
+.header__name {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.product {
+  width: 940px;
+  height: 340px;
+  display: flex;
+}
+
+.things {
+  margin-top: 134px;
+}
+
+.text__products {
+  width: 392px;
+  height: 110px;
+  color: #9e9898;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.23px;
+}
+
+.product__text {
+  width: 392px;
+  height: 252px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.product__text h1 {
+  color: #868686;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  letter-spacing: -0.14px;
+}
+.product__text h1::before {
+  content: "";
+  margin-right: 12px;
+  width: 10px;
+  height: 39px;
+  background-color: #fc635e;
+}
+
+.btn__main {
+  color: #f2f2f2;
+  font-size: 20px;
+  background-color: #fc635e;
+}
+
+.product__surce {
+  width: 506px;
+  height: 323px;
+  background-image: url(/fisrt-lesson/image/web_social.png);
+  background-size: cover;
+}
+
+.disign {
+  background-color: white;
+  width: 100%;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disign__surce {
+  width: 100%;
+  height: 576px;
+  display: flex;
+  background-color: white;
+}
+
+.disign__view {
+  width: 392px;
+  height: 252px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: end;
+}
+.disign__view h1 {
+  color: #868686;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  letter-spacing: -0.14px;
+}
+.disign__view h1::after {
+  content: "";
+  margin-left: 12px;
+  width: 10px;
+  height: 39px;
+  background-color: #fc635e;
+}
+
+.disign__image {
+  width: 503px;
+  height: 296px;
+  background-image: url(/fisrt-lesson/image/note_image.png);
+  background-size: cover;
+}
+
+.book__daisy {
+  width: 526px;
+  height: 334px;
+  background-image: url(/fisrt-lesson/image/book-daisy.png);
+  background-size: cover;
+}
+
+.daisy__product {
+  margin-top: 123px;
+  padding: 12px;
+}
+
+.novigation__section {
+  width: 100%;
+  height: 840px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.novigation__secion__container {
+  width: 100%;
+  height: 840px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.container__start {
+  width: 940px;
+  display: flex;
+  height: 134px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.container__start h1 {
+  color: #868686;
+  width: 150px;
+  height: 35px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: -0.14px;
+}
+.container__start h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-top: 12px;
+  background-color: #adadad;
+}
+
+.container__section__main {
+  width: 940px;
+  height: 61px;
+  border-bottom: 1px solid #adadaa;
+  border-top: 1px solid #adadaa;
+  display: flex;
+  align-items: center;
+}
+.container__section__main ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  justify-content: space-around;
+  color: #adadaa;
+}
+.container__section__main ul a {
+  color: #fc635e;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.container__center {
+  width: 940px;
+  height: 410px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.first {
+  background-image: url(/fisrt-lesson/image/1.png);
+  width: 458px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.first h1 {
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro";
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 27px;
+  margin-left: 23px;
+  text-transform: uppercase;
+}
+.first span {
+  color: #ffffff;
+  font-family: "PF Encore Sans Pro";
+  font-size: 104px;
+  font-weight: 700;
+  align-self: center;
+  line-height: 0.76;
+}
+
+.container__finish {
+  display: flex;
+  flex-direction: column;
+  height: 114px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal {
+  width: 100%;
+  text-align: center;
+  height: 577px;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.personal__daisy {
+  width: 820px;
+  height: 511px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__text {
+  font-size: 28px;
+  color: #565656;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header__text::after {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  height: 1px;
+  background-color: #757575;
+  content: "";
+}
+
+.header__span {
+  color: #fc635e;
+}
+
+.coll {
+  display: flex;
+  width: 820px;
+  height: 305px;
+  justify-content: space-between;
+}
+
+.daisy__coll {
+  width: 227px;
+  height: 305px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.daisy__coll h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #565656;
+  letter-spacing: -0.14px;
+}
+.daisy__coll span {
+  color: #fc635e;
+}
+.daisy__coll .orentation {
+  color: #565656;
+}
+
+.orentation {
+  color: #565656;
+}
+
+.seo__section {
+  width: 90%;
+  height: 577px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seo {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.seo .image__polygon {
+  margin-left: 130px;
+}
+.seo .scrool_section {
+  margin-left: 130px;
+}
+
+.joober__seo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 800px;
+  justify-content: space-between;
+}
+.joober__seo p {
+  width: 320px;
+  width: 319px;
+  text-align: left;
+  height: 56px;
+  color: #767676;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.joober__seo h1 {
+  color: #565656;
+  color: #818181;
+  font-family: "PF Encore Sans Pro - Light";
+  font-weight: 300;
+  letter-spacing: -0.1px;
+}
+.joober__seo h1 span {
+  color: #fc635e;
+}
+
+.polygon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.poly {
+  background-image: url(/fisrt-lesson/image/poly.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 209px;
+  height: 242px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -141px;
+  align-items: center;
+  flex-direction: column;
+}
+.poly span {
+  width: 65px;
+  height: 25px;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+.poly p {
+  width: 160px;
+  height: 35px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20.96px;
+  letter-spacing: -0.07px;
+}
+
+.footer__background {
+  width: 100%;
+  height: 253px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  background-image: url(/fisrt-lesson/image/footer.png);
+}
+
+/*# sourceMappingURL=style.css.map */
